@@ -23,6 +23,13 @@ class ContatoEmail extends Mailable
         $this->data = $data;
     }
 
+    public function build()
+    {
+        return $this->subject('Bem-vindo ao Sistema')
+            ->view('emails.contato')
+            ->with('dados', $this->data);
+    }
+
     public function envelope(): Envelope
     {
         return new Envelope(
