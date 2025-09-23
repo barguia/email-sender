@@ -67,7 +67,9 @@
     <div class="field">
         <div class="label">Mensagem:</div>
         <div class="value mensagem">
-            {{ $dados['mensagem'] ?? 'Sem mensagem' }}
+            <pre>
+                {{ $dados['mensagem'] ?? 'Sem mensagem' }}
+            </pre>
         </div>
     </div>
 </div>
