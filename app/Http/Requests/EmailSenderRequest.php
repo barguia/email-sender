@@ -24,8 +24,8 @@ class EmailSenderRequest extends FormRequest
         return [
             'nome' => 'required|string|min:3|max:100',
             'email' => 'required|email',
-            'assunto' => 'required|string|min:3|max:100',
-            'mensagem' => 'required|string|min:3|max:100',
+            'assunto' => 'required|string|min:3|max:150',
+            'mensagem' => 'required|string|min:10',
             'telefone' => [
                 'required',
                 'string',
