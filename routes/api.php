@@ -10,4 +10,5 @@ Route::get('/user', function (Request $request) {
 
 
 Route::post('send-email', [EmailSenderController::class, 'send'])
-->name('send-email')->middleware('recaptcha');
+->name('send-email');
+#->middleware('recaptcha');
