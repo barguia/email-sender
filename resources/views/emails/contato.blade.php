@@ -11,7 +11,7 @@
             color: #333;
         }
         .container {
-            max-width: 600px;
+            max-width: 1000px;
             margin: auto;
             background: #ffffff;
             border-radius: 8px;
